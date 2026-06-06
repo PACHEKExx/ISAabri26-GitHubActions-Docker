@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at top, #1a1a1a, #050505 70%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 28px;
+            background: rgba(15, 15, 15, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 45px rgba(0, 0, 0, 0.9);
+            text-align: center;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            padding: 8px 20px;
+            margin-bottom: 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #d0d0d0;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, #ffffff, #9f9f9f, #ffffff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .descripcion {
+            font-size: 20px;
+            color: #bdbdbd;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            padding: 25px;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #111111, #070707);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .tarjeta p {
+            color: #a7a7a7;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 40px;
+            border-radius: 50px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: #cfcfcf;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                padding: 35px 22px;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .descripcion {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <span class="etiqueta">INTERFAZ WEB FLASK</span>
+
+        <h1>{{ titulo }}</h1>
+
+        <p class="descripcion">
+            Bienvenido a una interfaz elegante, moderna y oscura creada con Python y Flask.
+        </p>
+
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <h3>Diseño Elegante</h3>
+                <p>Estilo negro, limpio y moderno para una presentación profesional.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Python Flask</h3>
+                <p>Aplicación web ejecutándose correctamente desde el puerto 5000.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Responsive</h3>
+                <p>Se adapta a computadoras, tablets y celulares sin perder el estilo.</p>
+            </div>
+        </div>
+
+        <a href="#" class="boton">Ingresar</a>
+
+        <footer>
+            © 2026 PACHEKExx G
+        </footer>
+    </div>
+
+</body>
+</html>
