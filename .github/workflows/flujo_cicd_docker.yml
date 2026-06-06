@@ -38,4 +38,4 @@ jobs:
             docker image pull pachekexx/isaa-bri26-githubactions-docker:flaskapp
             docker container stop contflaskpachekexx
             docker container rm contflaskpachekexx
-            docker container run -d --name contflaskpachekexx -p 80:5000 pachekexx/isaa-bri26-githubactions-docker:flaskapp
+            docker container run -d --name contflaskpachekexx -p 8080:5000 pachekexx/isaa-bri26-githubactions-docker:flaskapp
